@@ -1,0 +1,31 @@
+/* .container {
+    height: 100%;
+} */
+
+.container img{
+    width: 100%;
+    opacity: .3;
+    overflow: hidden;
+    animation: imageAppear .5s ease-out;
+}
+
+@keyframes imageAppear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: .3;
+    }
+}
+
+.card-container {
+    border: solid 0px red;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 90%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    transform: translateY(-50%);
+}

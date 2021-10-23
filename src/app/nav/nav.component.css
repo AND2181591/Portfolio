@@ -1,0 +1,13 @@
+.nav-item {
+    padding: 15px 20px;
+}
+
+.nav-link {
+    cursor: pointer;
+    color: #ff0800;
+    border-bottom: solid 3px transparent;
+}
+
+.nav-link:hover {
+    border-bottom: solid 3px #ff0800;
+}

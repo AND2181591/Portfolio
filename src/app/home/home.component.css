@@ -1,0 +1,26 @@
+.header {
+    margin: auto;
+    position: relative;
+    top: 10%;
+    animation: header 2s cubic-bezier(0,.56,0,.99);
+}
+
+h1, h5 {
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    font-size: 96px;
+}
+
+@keyframes header {
+    0% {
+        opacity: 0;
+        transform: translateY(-250px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
