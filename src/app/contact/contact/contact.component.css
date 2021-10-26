@@ -1,0 +1,23 @@
+.page-header {
+    right: 12%;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    bottom: 20%;
+}
+
+app-card {
+    width: 70%;
+    margin: 25px 0;
+}

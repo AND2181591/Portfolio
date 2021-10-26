@@ -3,15 +3,19 @@ import { CommonModule } from '@angular/common';
 
 import { SkillsRoutingModule } from './skills-routing.module';
 import { SkillsComponent } from './skills/skills.component';
+import { SharedModule } from '../shared/shared.module';
+import { SkillsCardComponent } from './skills-card/skills-card.component';
 
 
 @NgModule({
   declarations: [
-    SkillsComponent
+    SkillsComponent, 
+    SkillsCardComponent
   ],
   imports: [
     CommonModule,
-    SkillsRoutingModule
+    SkillsRoutingModule, 
+    SharedModule
   ]
 })
 export class SkillsModule { }

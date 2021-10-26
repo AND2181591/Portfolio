@@ -1,0 +1,16 @@
+.page-header {
+    right: 15%;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    margin: 0;
+}
+
+.card-container {
+    position: relative;
+    top: 120px;
+}

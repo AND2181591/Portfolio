@@ -1,1 +1,28 @@
-<p>skills works!</p>
+<div class="container">
+    <div class="page-header">
+        <h1>Skills</h1>
+    </div>
+
+    <div class="card-container" data-aos="fade-up">
+        <app-skills-card 
+            [name]="skills.htmlCss.name"
+            [skills]="skills.htmlCss.skills"></app-skills-card>
+
+        <app-skills-card 
+            [name]="skills.javaScript.name"
+            [skills]="skills.javaScript.skills"></app-skills-card>
+
+        <app-skills-card 
+            [name]="skills.other.name"
+            [skills]="skills.other.skills"></app-skills-card>
+
+        <app-skills-card 
+            [name]="skills.minor.name"
+            [skills]="skills.minor.skills"></app-skills-card>
+    </div>
+    
+</div>
+
+<!-- <app-card *ngFor="let skill of skills"
+    [header]="skill.skillName"
+    [image]="skill.skillLogo"></app-card> -->

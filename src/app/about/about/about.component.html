@@ -1,8 +1,19 @@
 <div class="container">
     <img src="https://i.imgur.com/OCUB9x9.jpg" alt="">
+    <div class="page-header">
+        <h1>Andrew Camacho</h1>
+        <h3>Software Developer</h3>
+    </div>
     <div 
         class="card-container" 
         data-aos="fade-up">
-        <app-card></app-card>
+        <app-card 
+            [header]="aboutMe.header"
+            [content]="aboutMe.content">
+        </app-card>
+        <app-card 
+            [header]="education.header"
+            [content]="education.content">
+        </app-card>
     </div>
 </div>

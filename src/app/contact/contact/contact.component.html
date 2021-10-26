@@ -1,1 +1,18 @@
-<p>contact works!</p>
+<div class="container">
+    <div class="page-header">
+        <h1>Contact</h1>
+    </div>
+
+    <div data-aos="fade-up" class="card-container">
+        <app-card 
+            header="Email"
+            [content]="contact.email">
+        </app-card>
+
+        <app-card 
+            header="GitHub"
+            [content]="contact.gitHub">
+        </app-card>
+    </div>
+    
+</div>
