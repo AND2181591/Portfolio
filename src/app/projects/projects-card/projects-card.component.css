@@ -1,0 +1,107 @@
+.card-container {
+    height: 420px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin: 20px 0;
+}
+
+img {
+    border-radius: 4px;
+}
+
+.accomplishments {
+    padding: 20px 10px;
+}
+
+.accomplishments li {
+    margin-bottom: 15px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.links a {
+    text-decoration: none;
+    color: #ff0800;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+button {
+    overflow: hidden;
+    position: relative;
+    background: transparent;
+    width: 90px;
+    color: #ff0800;
+    border: solid 1px transparent;
+    border-radius: 4px;
+    transition: border .2s, background-color .2s;
+}
+
+button:before {
+    position: absolute;
+    bottom: -85px;
+    left: -75px;
+    transform: rotate(-20deg);
+    content: '';
+    background: linear-gradient(90deg, rgba(37,37,37,1) 0%, rgba(255,255,255,1) 53%, rgba(37,37,37,1) 100%);
+    opacity: .7;
+    width: 50%;
+    height: 90px;
+}
+
+.card:hover button {
+    border: solid 1px;
+    background-color: #141414;
+    box-shadow: 0px 2px 0px 0px #ff0800;
+}
+
+.card:hover button:before {
+    animation: shine .8s;
+}
+
+.card button:hover {
+    background-color: #fff;
+    font-weight: 600;
+    animation: pulse .5s infinite;
+}
+
+.card button:hover:before {
+    background: #fff;
+}
+
+.card button:active {
+    transform: translateY(2px);
+    box-shadow: 0px 1px 0px 0px #ff0800;
+    animation: none;
+}
+
+@keyframes shine {
+    0% {
+        left: -75px;
+        bottom: -75px;
+    }
+    100% {
+        left: 100px;
+        bottom: 22px;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0px 2px 0px 2px #ff0800;
+    }
+    100% {
+        box-shadow: 0px 2px 6px 2px #ff0800;
+    }
+}

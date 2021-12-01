@@ -1,7 +1,24 @@
+.container {
+    margin-bottom: 25px;
+}
+
 .page-header {
     right: 12%;
 }
 
 h1 {
     font-size: 48px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    top: 120px;
+    margin-top: 37px;
+}
+
+app-projects-card {
+    width: 30%;
 }

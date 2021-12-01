@@ -2,4 +2,13 @@
     <div class="page-header">
         <h1>Projects</h1>
     </div>
-</div>
+
+    <div 
+        class="card-container"
+        data-aos="fade-up">
+        <app-projects-card 
+            *ngFor="let project of projects" 
+            [project]="project">
+        </app-projects-card>
+    </div>
+</div> 

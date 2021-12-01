@@ -1,1 +1,37 @@
-<p>projects-card works!</p>
+<div class="card-container">
+    <div
+        class="card"
+        *ngIf="!clicked">
+        <img [src]="project.image" [alt]="project.name">
+        <div class="card-body">
+            <h5 class="card-title">{{ project.name }}</h5>
+            <p class="card-text">{{ project.description }}</p>
+        </div>
+        <div class="button">
+            <button (click)="onClick()">Details...</button>
+        </div>
+    </div>
+
+    <div 
+        class="card"
+        *ngIf="clicked"
+        [@appear]>
+        <div class="accomplishments">
+            <ul>
+                <li *ngFor="let accomplishment of project.accomplishments">
+                    {{ accomplishment }}
+                </li>
+            </ul>
+        </div>
+
+        <div class="links">
+            <a [href]="project.gitHubLink">GitHub</a>
+            <a [href]="project.deployLink">Deployment</a>
+        </div>
+        
+        <div class="button">
+            <button (click)="onClick()">Main...</button>
+        </div>
+    </div>
+
+</div>
