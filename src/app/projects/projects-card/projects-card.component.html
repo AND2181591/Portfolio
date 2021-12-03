@@ -17,6 +17,7 @@
         *ngIf="clicked"
         [@appear]>
         <div class="accomplishments">
+            <h3>Accomplishments</h3>
             <ul>
                 <li *ngFor="let accomplishment of project.accomplishments">
                     {{ accomplishment }}
@@ -25,8 +26,8 @@
         </div>
 
         <div class="links">
-            <a [href]="project.gitHubLink">GitHub</a>
-            <a [href]="project.deployLink">Deployment</a>
+            <a [href]="project.gitHubLink" target="_blank">GitHub</a>
+            <a [href]="project.deployLink" target="_blank">Deployment</a>
         </div>
         
         <div class="button">

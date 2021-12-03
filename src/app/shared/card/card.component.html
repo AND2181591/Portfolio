@@ -1,6 +1,7 @@
 <div class="card">
     <div class="card-body">
         <h4 class="card-title">{{ header }}</h4>
-        <div class="card-text">{{ content }}</div>
+        <div *ngIf="!link" class="card-text">{{ content }}</div>
+        <a *ngIf="link" [href]="link" target="_blank">{{ content }}</a>
     </div>
 </div>

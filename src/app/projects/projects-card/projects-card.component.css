@@ -17,6 +17,10 @@ img {
     padding: 20px 10px;
 }
 
+.accomplishments h3 {
+    padding: 0 12px;
+}
+
 .accomplishments li {
     margin-bottom: 15px;
 }
@@ -29,6 +33,7 @@ img {
 .links a {
     text-decoration: none;
     color: #ff0800;
+    text-align: center;
 }
 
 .button {
@@ -37,7 +42,7 @@ img {
     padding: 10px;
 }
 
-button {
+button, .links a {
     overflow: hidden;
     position: relative;
     background: transparent;
@@ -48,7 +53,7 @@ button {
     transition: border .2s, background-color .2s;
 }
 
-button:before {
+button:before, .links a:before {
     position: absolute;
     bottom: -85px;
     left: -75px;
@@ -60,27 +65,27 @@ button:before {
     height: 90px;
 }
 
-.card:hover button {
+.card:hover button, .card:hover .links a {
     border: solid 1px;
     background-color: #141414;
     box-shadow: 0px 2px 0px 0px #ff0800;
 }
 
-.card:hover button:before {
+.card:hover button:before, .card:hover .links a:before {
     animation: shine .8s;
 }
 
-.card button:hover {
+.card button:hover, .card .links a:hover {
     background-color: #fff;
     font-weight: 600;
     animation: pulse .5s infinite;
 }
 
-.card button:hover:before {
+.card button:hover:before, .card .links a:hover:before {
     background: #fff;
 }
 
-.card button:active {
+.card button:active, .card .links a:active {
     transform: translateY(2px);
     box-shadow: 0px 1px 0px 0px #ff0800;
     animation: none;
