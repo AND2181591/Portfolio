@@ -1,4 +1,24 @@
 <div class="header">
     <h1>Hello World!</h1>
-    <h5>I'm Andrew</h5>
+    <h5 *ngIf="jumping">I'm Andrew</h5>
+
+    <div class="firework1">
+        <app-fireworks [fire]="jumping"></app-fireworks>
+    </div>
+      
+    <div class="firework2">
+        <app-fireworks [fire]="jumping"></app-fireworks>
+    </div>
+
+    <div class="pixelart-container" (click)="jumping = true">
+
+        <div 
+            class="pixelart" 
+            *ngIf="!jumping"></div>
+
+        <div 
+            *ngIf="jumping" 
+            [ngClass]="{'jump-animation': jumping}" 
+            class="pixelart-jump"></div>
+    </div>
 </div>
