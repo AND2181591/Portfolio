@@ -52,6 +52,19 @@ export class ProjectsService {
       deployLink: 'https://budget-calculator-zeta.vercel.app/'
     }, 
     {
+      name: 'Season Check', 
+      image: 'https://i.imgur.com/dzzuONS.png',
+      description: `
+        This application checks which season is occurring based on your latitude position in the world.
+      `, 
+      accomplishments: [
+        'Use of Windows Geolocation.', 
+        'Animation and some unique color displays based on the season.'
+      ], 
+      gitHubLink: 'https://github.com/AND2181591/Season-Check', 
+      deployLink: 'https://season-check-seven.vercel.app/'
+    }, 
+    {
       name: 'Tasks', 
       image: 'https://i.imgur.com/5s5Mw9O.png',
       description: `
