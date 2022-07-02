@@ -11,3 +11,7 @@
 .nav-link:hover {
     border-bottom: solid 3px #ff0800;
 }
+
+.nav-link-active {
+    border-bottom: solid 3px #ff0800;
+}
